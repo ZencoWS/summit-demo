@@ -1,4 +1,4 @@
-﻿# Falcon Roofing Demo
+﻿# summit-demo
 
 A website demo built for Falcon Roofing, a local roofing company, to showcase its services and projects and help visitors get in touch.
 
@@ -25,8 +25,8 @@ Most of the skeleton components were pre-built by Relume. I made the styling cho
 1. Fork this repository, then clone your fork. Replace `YOUR-USERNAME` and `YOUR-REPOSITORY` with your fork's GitHub owner and repository name:
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git falcon-demo
-   cd falcon-demo
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git summit-demo
+   cd summit-demo
    ```
 
 2. Install all application and development dependencies using the committed lockfile:
