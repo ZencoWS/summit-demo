@@ -91,26 +91,26 @@ export function Contact6() {
         <div>
           <TextFade direction="up" staggerChildren={0.2}>
             <div className="mb-8 md:mb-10">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Quote</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4">Quote</p>
               <h2 className="mb-5 text-5xl font-bold leading-[0.98] tracking-[-0.02em] md:mb-6 md:text-7xl lg:text-8xl">
                 Request a quote
               </h2>
-              <p className="max-w-md text-falcon-ink/70 md:text-md">
+              <p className="max-w-md text-summit-charcoal/70 md:text-md">
                 Provide details about the service you require, and we’ll get back to you shortly.
               </p>
             </div>
-            <div className="grid grid-cols-1 border-t border-falcon-ink/15">
-              <div className="flex items-start gap-4 border-b border-falcon-ink/15 py-4">
-                <BiEnvelope className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <a href="mailto:enquiry@falconroofing.co.za" className="text-sm font-medium text-falcon-ink md:text-base">enquiry@falconroofing.co.za</a>
+            <div className="grid grid-cols-1 border-t border-summit-charcoal/15">
+              <div className="flex items-start gap-4 border-b border-summit-charcoal/15 py-4">
+                <BiEnvelope className="mt-0.5 size-5 flex-none text-summit-green-lightest" />
+                <a href="mailto:enquiry@falconroofing.co.za" className="text-sm font-medium text-summit-charcoal md:text-base">enquiry@falconroofing.co.za</a>
               </div>
-              <div className="flex items-start gap-4 border-b border-falcon-ink/15 py-4">
-                <BiPhone className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <a href="tel:+27731244478" className="text-sm font-medium text-falcon-ink md:text-base">073 124 4478</a>
+              <div className="flex items-start gap-4 border-b border-summit-charcoal/15 py-4">
+                <BiPhone className="mt-0.5 size-5 flex-none text-summit-green-lightest" />
+                <a href="tel:+27731244478" className="text-sm font-medium text-summit-charcoal md:text-base">073 124 4478</a>
               </div>
               <div className="flex items-start gap-4 py-4">
-                <BiMap className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <a href="https://www.google.com/maps/search/?api=1&query=8244%2F1+Sebini+St%2C+Rua+Vista%2C+Pretoria%2C+0175" className="text-sm font-medium text-falcon-ink md:text-base">8244/1 Sebini St, Rua Vista, Pretoria, 0175</a>
+                <BiMap className="mt-0.5 size-5 flex-none text-summit-green-lightest" />
+                <a href="https://www.google.com/maps/search/?api=1&query=8244%2F1+Sebini+St%2C+Rua+Vista%2C+Pretoria%2C+0175" className="text-sm font-medium text-summit-charcoal md:text-base">8244/1 Sebini St, Rua Vista, Pretoria, 0175</a>
               </div>
             </div>
           </TextFade>
@@ -123,11 +123,11 @@ export function Contact6() {
             >
               <div className="grid grid-cols-2 gap-6">
                 <div className="grid w-full items-center">
-                  <Label htmlFor="name" className="mb-2 text-sm font-semibold text-falcon-ink">
+                  <Label htmlFor="name" className="mb-2 text-sm font-semibold text-summit-charcoal">
                     Name
                   </Label>
                   <Input
-                    className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                    className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                     type="text"
                     id="name"
                     name="name"
@@ -138,11 +138,11 @@ export function Contact6() {
                   />
                 </div>
                 <div className="grid w-full items-center">
-                  <Label htmlFor="phone" className="mb-2 text-sm font-semibold text-falcon-ink">
+                  <Label htmlFor="phone" className="mb-2 text-sm font-semibold text-summit-charcoal">
                     Phone number
                   </Label>
                   <Input
-                    className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                    className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -155,11 +155,11 @@ export function Contact6() {
               </div>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="grid w-full items-center">
-                  <Label htmlFor="email" className="mb-2 text-sm font-semibold text-falcon-ink">
+                  <Label htmlFor="email" className="mb-2 text-sm font-semibold text-summit-charcoal">
                     Email
                   </Label>
                   <Input
-                    className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                    className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                     type="email"
                     id="email"
                     name="email"
@@ -170,11 +170,11 @@ export function Contact6() {
                   />
                 </div>
                 <div className="grid w-full items-center">
-                  <Label htmlFor="city" className="mb-2 text-sm font-semibold text-falcon-ink">
+                  <Label htmlFor="city" className="mb-2 text-sm font-semibold text-summit-charcoal">
                     City/Suburb
                   </Label>
                   <Input
-                    className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                    className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                     type="text"
                     id="city"
                     name="city"
@@ -186,7 +186,7 @@ export function Contact6() {
                 </div>
               </div>
               <div className="grid w-full items-center">
-                <Label htmlFor="service" className="mb-2 text-sm font-semibold text-falcon-ink">Required service</Label>
+                <Label htmlFor="service" className="mb-2 text-sm font-semibold text-summit-charcoal">Required service</Label>
                 <Select
                   name="service"
                   value={formValues.service}
@@ -199,10 +199,10 @@ export function Contact6() {
                   required
                   disabled={isSubmitting}
                 >
-                  <SelectTrigger id="service" className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15">
+                  <SelectTrigger id="service" className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15">
                     <SelectValue placeholder="Select one" />
                   </SelectTrigger>
-                  <SelectContent className="rounded-falcon-control border-falcon-ink/15 bg-falcon-white shadow-none">
+                  <SelectContent className="rounded-summit-control border-summit-charcoal/15 bg-summit-white shadow-none">
                     <SelectItem value="first-choice">Roof inspection</SelectItem>
                     <SelectItem value="second-choice">Roof installation</SelectItem>
                     <SelectItem value="third-choice">Roof repair</SelectItem>
@@ -212,7 +212,7 @@ export function Contact6() {
                 </Select>
               </div>
               <div className="grid w-full items-center py-3 md:py-4">
-                <Label className="mb-3 text-sm font-semibold text-falcon-ink md:mb-4">Preferred contact method</Label>
+                <Label className="mb-3 text-sm font-semibold text-summit-charcoal md:mb-4">Preferred contact method</Label>
                 <RadioGroup
                   className="grid grid-cols-2 gap-x-6 gap-y-3.5"
                   name="contactMethod"
@@ -227,40 +227,40 @@ export function Contact6() {
                   disabled={isSubmitting}
                 >
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="whatsapp" id="contact-whatsapp" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="whatsapp" id="contact-whatsapp" />
                     <Label htmlFor="contact-whatsapp">WhatsApp</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="phone-call" id="contact-phone" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="phone-call" id="contact-phone" />
                     <Label htmlFor="contact-phone">Phone call</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="email" id="contact-email" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="email" id="contact-email" />
                     <Label htmlFor="contact-email">Email</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="sms" id="contact-sms" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="sms" id="contact-sms" />
                     <Label htmlFor="contact-sms">SMS</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="in-person" id="contact-in-person" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="in-person" id="contact-in-person" />
                     <Label htmlFor="contact-in-person">In person</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <RadioGroupItem className="border-falcon-ink/30 text-falcon-totem-pole focus-visible:ring-falcon-totem-pole/20" value="other" id="contact-other" />
+                    <RadioGroupItem className="border-summit-charcoal/30 text-summit-green-lightest focus-visible:ring-summit-green-lightest/20" value="other" id="contact-other" />
                     <Label htmlFor="contact-other">Other</Label>
                   </div>
                 </RadioGroup>
               </div>
               <div className="grid w-full items-center">
-                <Label htmlFor="message" className="mb-2 text-sm font-semibold text-falcon-ink">
+                <Label htmlFor="message" className="mb-2 text-sm font-semibold text-summit-charcoal">
                   Project description
                 </Label>
                 <Textarea
                   id="message"
                   name="message"
                   placeholder="Tell us about the job"
-                  className="min-h-[11.25rem] overflow-auto rounded-falcon-control border-falcon-ink/20 bg-falcon-white p-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                  className="min-h-[11.25rem] overflow-auto rounded-summit-control border-summit-charcoal/20 bg-summit-white p-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                   value={formValues.message}
                   onChange={handleInputChange}
                   required
@@ -271,9 +271,9 @@ export function Contact6() {
                 <Button
                   type="submit"
                   className={cn(
-                    "button-falcon-primary w-full justify-center border border-falcon-ink-5",
+                    "button-summit-primary w-full justify-center border border-summit-charcoal-5",
                     submitStatus === "sent" &&
-                      "border-falcon-christi bg-none bg-falcon-christi text-falcon-white disabled:opacity-100",
+                      "border-summit-green bg-none bg-summit-green text-summit-white disabled:opacity-100",
                   )}
                   title={buttonLabel}
                   disabled={isSubmitting}

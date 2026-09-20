@@ -16,13 +16,13 @@ import {
 
 export function Layout504() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-falcon-white">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-summit-white">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           
           <div className="mx-auto max-w-lg text-center">
             <TextFade direction="up" staggerChildren={0.2}>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Why Falcon</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4">Why Falcon</p>
               <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
                 Built on workmanship
               </h1>
@@ -31,12 +31,12 @@ export function Layout504() {
                 and do the work properly. That is our promise.
               </p>
               <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-                <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                <Button asChild className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Get a quote" variant="secondary">
                   <a href="/#quote">Get a quote</a>
                 </Button>
                 <Button
                   asChild
-                  className="font-semibold text-falcon-harvest"
+                  className="font-semibold text-summit-green-lightest"
                   title="Our work"
                   variant="link"
                   size="link"
@@ -89,9 +89,9 @@ export function Layout504() {
                       alt="Tiles being add to roof structure"
                     />
                   </div>
-                  <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
+                  <div className="aspect-square place-content-center rounded-b-3xl bg-summit-off-white sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                     <div className="p-6 md:p-8 lg:p-12">
-                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4 md:text-base">Workmanship</p>
+                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4 md:text-base">Workmanship</p>
                       <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
                         Every seam is sealed and every sheet is fixed right
                       </h2>
@@ -100,12 +100,12 @@ export function Layout504() {
                         patch jobs that fail in the next storm.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                        <Button asChild className="text-sm md:text-base button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Get a quote" variant="secondary">
                           <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
                           asChild
-                          className="text-sm font-semibold text-falcon-harvest md:text-base"
+                          className="text-sm font-semibold text-summit-green-lightest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"
@@ -134,9 +134,9 @@ export function Layout504() {
                       alt="Roof with solar pannels"
                     />
                   </div>
-                  <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
+                  <div className="aspect-square place-content-center rounded-b-3xl bg-summit-off-white sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                     <div className="p-6 md:p-8 lg:p-12">
-                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4 md:text-base">Reliability</p>
+                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4 md:text-base">Reliability</p>
                       <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
                         We show up when promised and finish the job properly
                       </h2>
@@ -144,12 +144,12 @@ export function Layout504() {
                         From the first inspection to the final check, we communicate clearly, work responsibly and follow through on every commitment.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                        <Button asChild className="text-sm md:text-base button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Get a quote" variant="secondary">
                           <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
                           asChild
-                          className="text-sm font-semibold text-falcon-harvest md:text-base"
+                          className="text-sm font-semibold text-summit-green-lightest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"
@@ -178,9 +178,9 @@ export function Layout504() {
                       alt="Roof underconstruction"
                     />
                   </div>
-                  <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
+                  <div className="aspect-square place-content-center rounded-b-3xl bg-summit-off-white sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                     <div className="p-6 md:p-8 lg:p-12">
-                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4 md:text-base">Experience</p>
+                      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4 md:text-base">Experience</p>
                       <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
                         Knowing what to look for makes all the difference
                       </h2>
@@ -188,12 +188,12 @@ export function Layout504() {
                         We understand how each part of a roofing system works together, helping us identify problems and choose the right solution.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                        <Button asChild className="text-sm md:text-base button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Get a quote" variant="secondary">
                           <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
                           asChild
-                          className="text-sm font-semibold text-falcon-harvest md:text-base"
+                          className="text-sm font-semibold text-summit-green-lightest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"

@@ -14,7 +14,7 @@ export function Portfolio8() {
       <div className="container">
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
           <TextFade direction="up" staggerChildren={0.2}>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Projects</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4">Projects</p>
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               Work that holds
             </h2>
@@ -38,7 +38,7 @@ export function Portfolio8() {
                       />
                     </a>
                   </div>
-                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
+                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-summit-off-white shadow-large">
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
                       <a href="/projects/centurion-roof-replacement">Centurion roof replacement</a>
                     </h3>
@@ -50,7 +50,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/services/roofing"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Roofing
                         </a>
@@ -58,7 +58,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/service-areas/centurion"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Centurion
                         </a>
@@ -66,7 +66,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/projects/residential"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Residential
                         </a>
@@ -78,7 +78,7 @@ export function Portfolio8() {
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
-                      className="mt-5 font-semibold text-gray-600 md:mt-6"
+                      className="mt-5 font-semibold text-summit-charcoal md:mt-6"
                     >
                       <a href="/projects/centurion-roof-replacement">View project</a>
                     </Button>
@@ -99,7 +99,7 @@ export function Portfolio8() {
                       />
                     </a>
                   </div>
-                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
+                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-summit-off-white shadow-large">
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
                       <a href="/projects/midstream-roof-repair">Roof repair services</a>
                     </h3>
@@ -108,7 +108,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/services/roof-repair"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Repair
                         </a>
@@ -116,7 +116,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/service-areas/midstream"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Midstream
                         </a>
@@ -124,7 +124,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/projects/recent-work"
-                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-summit-green-lightest rounded-md"
                         >
                           Recent work
                         </a>
@@ -136,7 +136,7 @@ export function Portfolio8() {
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
-                      className="mt-5 font-semibold text-gray-600 md:mt-6"
+                      className="mt-5 font-semibold text-summit-charcoal md:mt-6"
                     >
                       <a href="/projects/midstream-roof-repair">View project</a>
                     </Button>
@@ -147,7 +147,7 @@ export function Portfolio8() {
           </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
           <TextFade direction="up" staggerChildren={0.2}>
-            <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
+            <Button asChild className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
               <a href="/projects">View all</a>
             </Button>
           </TextFade>

@@ -48,7 +48,7 @@ const useCarousel = () => {
 
   const dotClassName = (index) => {
     return `mx-[3px] inline-block size-2 rounded-full ${
-      current === index + 1 ? "bg-black" : "bg-neutral-light"
+      current === index + 1 ? "bg-summit-green" : "bg-summit-charcoal/20"
     }`;
   };
 
@@ -80,12 +80,12 @@ export function Header102() {
             repair with a single objective: a roof that endures.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button asChild className="button-falcon-primary" title="Request a quote">
+            <Button asChild className="button-summit-primary" title="Request a quote">
               <a href="/#quote">Request a quote</a>
             </Button>
             <Button
               asChild
-              className="group button-falcon-whatsapp"
+              className="group button-summit-whatsapp"
               title="WhatsApp us"
               variant="secondary"
               size="sm"
@@ -96,7 +96,7 @@ export function Header102() {
           </div>
         </TextFade>
       </div>
-      <div className="relative clear-both h-[300px] max-h-[60rem] min-h-screen w-full bg-[#ddd] text-center">
+      <div className="relative clear-both h-[300px] max-h-[60rem] min-h-screen w-full bg-summit-off-white text-center">
         <Carousel
           opts={carousel.options}
           plugins={carousel.plugins}
@@ -115,7 +115,7 @@ export function Header102() {
                       alt="Complete roof"
                     />
                   </div>
-                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <TextFade direction="up" staggerChildren={0.15}>
                         <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
@@ -141,7 +141,7 @@ export function Header102() {
                       alt="Construction workers inspecting roof"
                     />
                   </div>
-                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <TextFade direction="up" staggerChildren={0.15}>
                         <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
@@ -167,7 +167,7 @@ export function Header102() {
                       alt="Construction worker repairing roof"
                     />
                   </div>
-                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <TextFade direction="up" staggerChildren={0.15}>
                         <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
@@ -198,8 +198,8 @@ export function Header102() {
                 className={carousel.dotClassName(2)}
               />
             </div>
-            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-falcon-ink-5 border-none md:right-24" />
-            <CarouselNext className="bottom-2 left-auto right-8 top-auto size-12 bg-falcon-ink-5 border-none" />
+            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-summit-charcoal-5 border-none md:right-24" />
+            <CarouselNext className="bottom-2 left-auto right-8 top-auto size-12 bg-summit-charcoal-5 border-none" />
           </div>
         </Carousel>
       </div>

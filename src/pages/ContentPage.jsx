@@ -39,22 +39,22 @@ export default function ContentPage() {
       <Navbar5 />
       <section className="px-[5%] py-20 md:py-28 lg:py-36">
         <div className="container mx-auto max-w-4xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest">
             Falcon Roofing
           </p>
           <h1 className="mb-6 text-6xl font-bold md:text-8xl lg:text-9xl">
             {title}
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-falcon-ink/70">
+          <p className="mx-auto max-w-2xl text-lg text-summit-charcoal/70">
             {description}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild className="button-falcon-primary" title="Request a quote">
+            <Button asChild className="button-summit-primary" title="Request a quote">
               <a href="/#quote">Request a quote</a>
             </Button>
             <Button
               asChild
-              className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5"
+              className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5"
               title="Back to home"
               variant="secondary"
             >

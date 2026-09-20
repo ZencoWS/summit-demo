@@ -70,7 +70,7 @@ export function Navbar5() {
               onClick={useActive.toggleMobileMenu}
             >
               <motion.span
-                className="my-[3px] h-0.5 w-6 bg-black"
+                className="my-[3px] h-0.5 w-6 bg-summit-charcoal"
                 animate={useActive.animateMobileMenuButtonSpan}
                 variants={{
                   open: { translateY: 8, transition: { delay: 0.1 } },
@@ -83,7 +83,7 @@ export function Navbar5() {
                 }}
               />
               <motion.span
-                className="my-[3px] h-0.5 w-6 bg-black"
+                className="my-[3px] h-0.5 w-6 bg-summit-charcoal"
                 animate={useActive.animateMobileMenu}
                 variants={{
                   open: { width: 0, transition: { duration: 0.1 } },
@@ -94,7 +94,7 @@ export function Navbar5() {
                 }}
               />
               <motion.span
-                className="my-[3px] h-0.5 w-6 bg-black"
+                className="my-[3px] h-0.5 w-6 bg-summit-charcoal"
                 animate={useActive.animateMobileMenuButtonSpan}
                 variants={{
                   open: { translateY: -8, transition: { delay: 0.1 } },
@@ -174,13 +174,13 @@ export function Navbar5() {
                 exit="close"
                 animate={useActive.animateDropdownMenu}
                 transition={{ duration: 0.3 }}
-                className="bottom-auto left-0 top-full w-full min-w-full max-w-full overflow-hidden bg-background-secondary lg:absolute lg:w-[100vw] lg:px-[5%] lg:shadow-[0_16px_36px_rgba(8,1,1,0.18)] lg:[--height-close:auto]"
+                className="bottom-auto left-0 top-full w-full min-w-full max-w-full overflow-hidden bg-background-secondary lg:absolute lg:w-[100vw] lg:px-[5%] lg:shadow-[0_16px_36px_rgba(13,32,29,0.18)] lg:[--height-close:auto]"
               >
                 <div className="mx-auto flex size-full max-w-full items-center justify-between">
                   <div className="w-full lg:flex">
                     <div className="grid flex-1 gap-x-8 gap-y-6 py-4 pr-8 md:grid-cols-2 md:px-0 md:py-8 lg:py-8 lg:pr-8">
                       <div className="grid auto-rows-max grid-cols-1 grid-rows-[max-content] gap-y-2 md:gap-y-4">
-                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest leading-[1.3]">
                           Roofing services
                         </h4>
                         <a
@@ -261,7 +261,7 @@ export function Navbar5() {
                         </a>
                       </div>
                       <div className="grid auto-rows-max grid-cols-1 grid-rows-[max-content] gap-y-2 md:gap-y-4">
-                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest leading-[1.3]">
                           Company
                         </h4>
                         <a
@@ -344,7 +344,7 @@ export function Navbar5() {
                     </div>
                     <div className="max-w-none relative flex flex-1 p-6 md:py-8 md:pl-8 md:pr-0 lg:max-w-md">
                       <div className="relative z-10 grid w-full auto-cols-fr auto-rows-max grid-cols-1 grid-rows-[max-content_max-content] gap-4">
-                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest leading-[1.3]">
                           Previous work
                         </h4>
                         <div className="grid auto-cols-fr grid-cols-1 grid-rows-[auto_auto] items-start gap-y-2 lg:grid-rows-[auto]">
@@ -364,7 +364,7 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Simple maintenance tips for Gauteng homeowners
                               </p>
-                              <span className="mt-1.5 text-sm font-semibold text-falcon-harvest underline">
+                              <span className="mt-1.5 text-sm font-semibold text-summit-green-lightest underline">
                                 Read more
                               </span>
                             </div>
@@ -387,7 +387,7 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Behind the scenes of a recent roof installation
                               </p>
-                              <span className="mt-1.5 text-sm font-semibold text-falcon-harvest underline">
+                              <span className="mt-1.5 text-sm font-semibold text-summit-green-lightest underline">
                                 Read more
                               </span>
                             </div>
@@ -396,7 +396,7 @@ export function Navbar5() {
                         <div className="flex items-center">
                           <Button
                             asChild
-                            className="font-semibold text-falcon-totem-pole"
+                            className="font-semibold text-summit-green-lightest"
                             title="See all projects"
                             variant="link"
                             size="link"
@@ -415,24 +415,24 @@ export function Navbar5() {
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
                 asChild
-                className="w-full button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5"
+                className="w-full button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5"
                 title="Button"
                 variant="secondary"
                 size="sm"
               >
                 <a href="tel:+27731244478">Let's Talk</a>
               </Button>
-              <Button asChild className="w-full button-falcon-primary" title="Get a quote" size="sm">
+              <Button asChild className="w-full button-summit-primary" title="Get a quote" size="sm">
                 <a href="/#quote">Get a Quote</a>
               </Button>
             </div>
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
+          <Button asChild className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
             <a href="tel:+27731244478">Let's Talk</a>
           </Button>
-          <Button asChild className="button-falcon-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>
+          <Button asChild className="button-summit-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>
             <a href="/#quote">Get a Quote</a>
           </Button>
         </div>

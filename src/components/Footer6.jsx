@@ -80,7 +80,7 @@ export function Footer6() {
               onSubmit={formState.handleSubmit}
             >
               <Input
-                className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
+                className="h-12 rounded-summit-control border-summit-charcoal/20 bg-summit-white px-4 shadow-none transition-colors placeholder:text-summit-charcoal/45 focus-visible:border-summit-green-lightest focus-visible:ring-2 focus-visible:ring-summit-green-lightest/15"
                 id="email"
                 name="email"
                 type="email"
@@ -94,9 +94,9 @@ export function Footer6() {
               <Button
                 type="submit"
                 className={cn(
-                  "group button-falcon-subscribe",
+                  "group button-summit-subscribe",
                   formState.submitStatus === "sent" &&
-                    "!border-falcon-christi !bg-falcon-christi !text-falcon-white disabled:opacity-100",
+                    "!border-summit-green !bg-summit-green !text-summit-white disabled:opacity-100",
                 )}
                 title={formState.buttonLabel}
                 variant="secondary"
@@ -125,7 +125,7 @@ export function Footer6() {
           </div>
         </div>
         <div className="py-12 md:py-18 lg:py-20">
-          <div className="h-px w-full bg-black" />
+          <div className="h-px w-full bg-summit-charcoal" />
         </div>
         <div className="rb-12 mb-12 grid grid-cols-1 items-start gap-x-8 gap-y-10 sm:grid-cols-3 md:mb-18 md:gap-y-12 lg:mb-20 lg:grid-cols-6">
           <div className="flex flex-col items-start justify-start">
@@ -259,7 +259,7 @@ export function Footer6() {
             </ul>
           </div>
         </div>
-        <div className="h-px w-full bg-black" />
+        <div className="h-px w-full bg-summit-charcoal" />
         <div className="flex flex-col items-start pb-4 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between md:pb-0 md:pt-8">
           <a href="/" className="mb-6 sm:mb-0" aria-label="Falcon Roofing home">
             <img

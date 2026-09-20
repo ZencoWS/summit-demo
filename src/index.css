@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-falcon-white font-sans text-falcon-body text-falcon-ink;
+    @apply bg-summit-white font-sans text-summit-body text-summit-charcoal;
     overflow-x: hidden;
   }
 
@@ -16,53 +16,53 @@
 }
 
 @layer components {
-  .button-falcon-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-falcon-button border-none bg-falcon-primary bg-[length:200%_200%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-falcon-body font-medium text-falcon-white shadow-[0_8px_20px_rgba(2,4,3,0.18)] transition-[transform,box-shadow,background-position] duration-300 ease-in-out hover:border-2 hover:border-falcon-white hover:bg-[position:100%_50%] hover:shadow-[0_12px_28px_rgba(160,11,13,0.45)] active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none;
+  .button-summit-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border-none bg-summit-primary bg-[length:200%_200%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-summit-body font-medium text-summit-white shadow-[0_8px_20px_rgba(13,32,29,0.18)] transition-[transform,box-shadow,background-position] duration-300 ease-in-out hover:border-2 hover:border-summit-white hover:bg-[position:100%_50%] hover:shadow-[0_12px_28px_rgba(106,195,181,0.45)] active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none;
   }
 
-  .button-falcon-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-falcon-button border border-transparent bg-falcon-transparent bg-[length:180%_180%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-falcon-body font-medium text-gray-600 shadow-[0_4px_12px_rgba(8,1,1,0.04)] transition-[box-shadow,background-color,background-position,transform] duration-300 ease-in-out hover:border-2 hover:border-falcon-harvest hover:text-falcon-harvest hover:bg-falcon-white hover:bg-[position:100%_50%] hover:shadow-[0_7px_16px_rgba(160,11,13,0.12)] active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none;
+  .button-summit-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border border-transparent bg-summit-transparent bg-[length:180%_180%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-summit-body font-medium text-summit-charcoal shadow-[0_4px_12px_rgba(47,57,63,0.04)] transition-[box-shadow,background-color,background-position,transform] duration-300 ease-in-out hover:border-2 hover:border-summit-green-lightest hover:text-summit-green hover:bg-summit-white hover:bg-[position:100%_50%] hover:shadow-[0_7px_16px_rgba(106,195,181,0.2)] active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none;
   }
 
-  .button-falcon-subscribe.button-falcon-subscribe {
-    @apply relative isolate inline-flex h-12 items-center justify-center gap-3 overflow-hidden rounded-falcon-button border-2 border-[#9A6508] bg-transparent px-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-[#9A6508] transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-[#9A6508] before:transition-transform before:duration-500 hover:text-falcon-white hover:before:scale-x-100 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#77980D] disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
+  .button-summit-subscribe.button-summit-subscribe {
+    @apply relative isolate inline-flex h-12 items-center justify-center gap-3 overflow-hidden rounded-summit-button border-2 border-summit-green bg-transparent px-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-summit-green transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-summit-green before:transition-transform before:duration-500 hover:text-summit-white hover:before:scale-x-100 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
     box-shadow: none;
   }
 
-  .button-falcon-subscribe.button-falcon-subscribe::before {
+  .button-summit-subscribe.button-summit-subscribe::before {
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .button-falcon-subscribe.button-falcon-subscribe:hover {
-    box-shadow: 0 8px 20px rgb(154, 101, 8, 0.4);
+  .button-summit-subscribe.button-summit-subscribe:hover {
+    box-shadow: 0 8px 20px rgb(35, 87, 79, 0.4);
   }
 
-  .button-falcon-whatsapp.button-falcon-whatsapp {
-    --whatsapp-accent: #77980d;
-    --whatsapp-shadow: rgba(119, 152, 13, 0.4);
-    @apply relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-falcon-button px-6 py-[0.5625rem] font-sans text-falcon-body font-medium tracking-[0.12em] transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 active:scale-95 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
+  .button-summit-whatsapp.button-summit-whatsapp {
+    --whatsapp-accent: #23574f;
+    --whatsapp-shadow: rgba(35, 87, 79, 0.4);
+    @apply relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-summit-button px-6 py-[0.5625rem] font-sans text-summit-body font-medium tracking-[0.12em] transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 active:scale-95 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
     border: 2px solid var(--whatsapp-accent);
     background-color: transparent;
     color: var(--whatsapp-accent);
     box-shadow: none;
   }
 
-  .button-falcon-whatsapp.button-falcon-whatsapp::before {
+  .button-summit-whatsapp.button-summit-whatsapp::before {
     background-color: var(--whatsapp-accent);
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .button-falcon-whatsapp.button-falcon-whatsapp:hover {
+  .button-summit-whatsapp.button-summit-whatsapp:hover {
     color: #ffffff;
     box-shadow: 0 8px 20px var(--whatsapp-shadow);
   }
 
-  .button-falcon-whatsapp.button-falcon-whatsapp:focus-visible {
+  .button-summit-whatsapp.button-summit-whatsapp:focus-visible {
     outline: 2px solid var(--whatsapp-accent);
     outline-offset: 2px;
   }
 
-  .button-falcon-control {
-    @apply inline-flex size-12 items-center justify-center rounded-falcon-button border border-falcon-white bg-falcon-surface text-falcon-ink transition-colors hover:bg-falcon-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50;
+  .button-summit-control {
+    @apply inline-flex size-12 items-center justify-center rounded-summit-button border border-summit-white bg-summit-off-white text-summit-charcoal transition-colors hover:bg-summit-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50;
   }
 }
