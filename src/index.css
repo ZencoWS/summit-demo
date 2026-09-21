@@ -86,4 +86,9 @@
     font-style: normal;
   }
 
+  /* Projects (Portfolio8.jsx) */
+  .link-h-effect {
+    @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-8 hover:duration-300 hover:ease-in-out;
+  }
+
 }
