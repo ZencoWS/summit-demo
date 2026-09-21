@@ -62,7 +62,7 @@ export default {
         "summit-h6": ["1.125rem", { lineHeight: "1.2", letterSpacing: "0.01em", fontWeight: "700" }],
       },
       borderRadius: {
-        "summit-button": "0.75rem",
+        "summit-button": "6px",
         "summit-control": "0.5rem",
       },
       maxWidth: {

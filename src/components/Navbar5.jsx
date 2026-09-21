@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { BiNotepad, BiPhoneCall } from "react-icons/bi";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
-import falconLogo from "../assets/Falcon-roofing-logo.png";
+import summitLogo from "../assets/summit-roofing-logo(no-bg).png";
 
 // Service Drop down Icons:
 import roofIcon from "../assets/icons/roof.svg"
@@ -43,6 +43,7 @@ const useRelume = () => {
     openOnMobileDropdownMenu,
     animateMobileMenu,
     animateMobileMenuButtonSpan,
+    isDropdownOpen,
     animateDropdownMenu,
     animateDropdownMenuIcon,
   };
@@ -53,14 +54,14 @@ export function Navbar5() {
   return (
     <section
       id="relume"
-      className="relative z-50 flex w-full items-center justify-between bg-background-secondary shadow-xl lg:min-h-18 lg:px-[5%]"
+      className="relative z-50 flex w-full items-center justify-between border-b border-summit-charcoal bg-background-secondary shadow-xl lg:min-h-18 lg:px-[5%]"
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="lg:flex">
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="/" aria-label="Falcon Roofing home">
               <img
-                src={falconLogo}
+                src={summitLogo}
                 width="65px"
                 alt="Falcon Roofing"
               />
@@ -121,19 +122,19 @@ export function Navbar5() {
           >
             <a
               href="/"
-              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
+              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6 nav-h-effect"
             >
               Home
             </a>
             <a
               href="/about"
-              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
+              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6 nav-h-effect"
             >
               About
             </a>
             <a
               href="/projects"
-              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
+              className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6 nav-h-effect"
             >
               Projects
             </a>
@@ -142,11 +143,24 @@ export function Navbar5() {
               onMouseLeave={useActive.closeOnDesktopDropdownMenu}
             >
               <button
-                className="flex w-full items-center justify-between gap-x-2 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:px-4 lg:py-6 lg:text-base"
+                className="flex w-full items-center justify-between gap-x-2 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:px-4 lg:py-6 lg:text-base nav-h-effect"
                 onClick={useActive.openOnMobileDropdownMenu}
               >
-                <span>Services</span>
+                <span
+                  className={
+                    useActive.isDropdownOpen
+                      ? "text-summit-green-lightest underline underline-offset-8"
+                      : undefined
+                  }
+                >
+                  Services
+                </span>
                 <motion.span
+                  className={
+                    useActive.isDropdownOpen
+                      ? "text-summit-green-lightest"
+                      : undefined
+                  }
                   variants={{
                     rotated: { rotate: 180 },
                     initial: { rotate: 0 },
@@ -364,7 +378,7 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Simple maintenance tips for Gauteng homeowners
                               </p>
-                              <span className="mt-1.5 text-sm font-semibold text-summit-green-lightest underline">
+                              <span className="mt-1.5 text-sm font-semibold text-summit-green-light underline underline-offset-8 nav-h-effect">
                                 Read more
                               </span>
                             </div>
@@ -387,7 +401,7 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Behind the scenes of a recent roof installation
                               </p>
-                              <span className="mt-1.5 text-sm font-semibold text-summit-green-lightest underline">
+                              <span className="mt-1.5 text-sm font-semibold text-summit-green-light underline underline-offset-8 nav-h-effect">
                                 Read more
                               </span>
                             </div>
@@ -396,13 +410,13 @@ export function Navbar5() {
                         <div className="flex items-center">
                           <Button
                             asChild
-                            className="font-semibold text-summit-green-lightest"
+                            className="font-semibold text-summit-green-light"
                             title="See all projects"
                             variant="link"
                             size="link"
                             iconRight={<RxChevronRight />}
                           >
-                            <a href="/projects">See all projects</a>
+                            <a href="/projects" className="underline underline-offset-8 nav-h-effect">See all projects</a>
                           </Button>
                         </div>
                       </div>
@@ -412,10 +426,12 @@ export function Navbar5() {
                 </div>
               </motion.div>
             </div>
+            
+            {/* Mobile */}
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
                 asChild
-                className="w-full button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5"
+                className="w-full button-summit-secondary text-summit-white bg-summit-charcoal border-border-ink-5"
                 title="Button"
                 variant="secondary"
                 size="sm"
@@ -428,8 +444,10 @@ export function Navbar5() {
             </div>
           </motion.div>
         </div>
+
+        {/* Desktop */}
         <div className="hidden lg:flex lg:gap-4">
-          <Button asChild className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
+          <Button asChild className="button-summit-secondary text-summit-white bg-summit-charcoal  border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
             <a href="tel:+27731244478">Let's Talk</a>
           </Button>
           <Button asChild className="button-summit-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>

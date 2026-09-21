@@ -17,11 +17,11 @@
 
 @layer components {
   .button-summit-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border-none bg-summit-primary bg-[length:200%_200%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-summit-body font-medium text-summit-white shadow-[0_8px_20px_rgba(13,32,29,0.18)] transition-[transform,box-shadow,background-position] duration-300 ease-in-out hover:border-2 hover:border-summit-white hover:bg-[position:100%_50%] hover:shadow-[0_12px_28px_rgba(106,195,181,0.45)] active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border-none bg-summit-green px-6 py-2.5 font-sans text-summit-body font-medium text-summit-white shadow-[0_8px_20px_rgba(13,32,29,0.18)] transition-[transform,box-shadow] duration-300 ease-in-out hover:border-2 hover:border-summit-green-dark hover:bg-summit-primary hover:shadow-[0_8px_20px_rgba(35,87,79,0.4)] active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-dark disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none;
   }
 
   .button-summit-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border border-transparent bg-summit-transparent bg-[length:180%_180%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-summit-body font-medium text-summit-charcoal shadow-[0_4px_12px_rgba(47,57,63,0.04)] transition-[box-shadow,background-color,background-position,transform] duration-300 ease-in-out hover:border-2 hover:border-summit-green-lightest hover:text-summit-green hover:bg-summit-white hover:bg-[position:100%_50%] hover:shadow-[0_7px_16px_rgba(106,195,181,0.2)] active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-summit-button border border-transparent bg-summit-charcoal bg-[length:180%_180%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-summit-body font-medium text-summit-white shadow-[0_4px_12px_rgba(47,57,63,0.04)] transition-[box-shadow,background-color,background-position,transform] duration-300 ease-in-out hover:border-2 hover:border-summit-charcoal hover:text-summit-charcoal hover:bg-summit-white hover:bg-[position:100%_50%] hover:shadow-[0_7px_16px_rgba(106,195,181,0.2)] active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none;
   }
 
   .button-summit-subscribe.button-summit-subscribe {
@@ -38,7 +38,7 @@
   }
 
   .button-summit-whatsapp.button-summit-whatsapp {
-    --whatsapp-accent: #23574f;
+    --whatsapp-accent: #25d366;
     --whatsapp-shadow: rgba(35, 87, 79, 0.4);
     @apply relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-summit-button px-6 py-[0.5625rem] font-sans text-summit-body font-medium tracking-[0.12em] transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 active:scale-95 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
     border: 2px solid var(--whatsapp-accent);
@@ -64,5 +64,9 @@
 
   .button-summit-control {
     @apply inline-flex size-12 items-center justify-center rounded-summit-button border border-summit-white bg-summit-off-white text-summit-charcoal transition-colors hover:bg-summit-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-summit-green-lightest disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .nav-h-effect {
+    @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-8 hover:duration-300 hover:ease-in-out;
   }
 }
