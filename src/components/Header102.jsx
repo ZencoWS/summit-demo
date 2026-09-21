@@ -69,15 +69,19 @@ export function Header102() {
       id="relume"
       className="grid grid-cols-1 items-center gap-y-16 overflow-hidden pt-16 sm:overflow-auto md:pt-24 lg:grid-cols-[50%_50%] lg:gap-y-0 lg:pt-0"
     >
-      <div className="mx-[5%] max-w-md justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
+      <div className="mx-[5%] max-w-md justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-center">
         <TextFade direction="up" staggerChildren={0.2}>
-          <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
-            Roofing, partition and ceiling specialists in Centurion
+          <span className="mb-3 md:mb-4 flex flex-row gap-2 items-center">
+            <hr className="short-line"/>
+            <p className="location-text text-sm text-summit-green tracking-[0.2em]">CENTURION • GAUTENG</p>
+          </span>
+          <h1 className="mb-3 text-9xl font-bold md:mb-4 md:text-[3rem] lg:text-[5.25rem]">
+            <span className="text-summit-green">STRONGER</span> ROOF AND <span className="text-summit-green">SAFER</span> HOME
           </h1>
           <p className="md:text-md">
-            Falcon Roofing provides reliable workmanship across
-            Centurion, Midrand, and surrounding areas. We inspect, install, and
-            repair with a single objective: a roof that endures.
+            Summit Roofing Co. provides reliable workmanship across
+            Centurion, Midrand, and surrounding areas. Conducting inspections, installations, 
+            and repairs. Start with a clear plan for your roof.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
             <Button asChild className="button-summit-primary" title="Request a quote">
@@ -96,95 +100,96 @@ export function Header102() {
           </div>
         </TextFade>
       </div>
-      <div className="relative clear-both h-[300px] max-h-[60rem] min-h-screen w-full bg-summit-off-white text-center">
+
+      {/* Carousel/image slider container begins */}
+
+      <div className="relative clear-both h-screen max-h-[60rem] w-full text-center lg:h-[45rem]">
         <Carousel
           opts={carousel.options}
           plugins={carousel.plugins}
           setApi={carousel.setApi}
           className="relative left-0 right-0 z-10 block h-full overflow-hidden whitespace-nowrap pl-4"
         >
-          <CarouselContent>
+          <CarouselContent className="h-full">
+
             {/* Slide 1 */}
-            <CarouselItem className="pl-0">
-              <div className="relative inline-block size-full whitespace-normal text-left align-top">
-                <div className="flex h-screen flex-col">
-                  <div className="relative flex-1">
-                    <img
-                      className="absolute size-full object-cover"
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787688806/still-2-clean_tmpntd.avif"
-                      alt="Complete roof"
-                    />
-                  </div>
-                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
-                    <div className="w-full max-w-lg">
-                      <TextFade direction="up" staggerChildren={0.15}>
-                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                          Professional Installations
-                        </h6>
-                        <p>
-                          We maintain professionalism throughout every stage of the project
-                        </p>
-                      </TextFade>
-                    </div>
+
+            <CarouselItem className="h-screen pl-0 lg:h-[45rem]">
+              <div className="relative h-full whitespace-normal text-left">
+                <img
+                  className="absolute inset-0 size-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999559/roof-install_z3hnws_9d8ca4.avif"
+                  alt="Complete roof"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+                <div className="absolute bottom-0 left-0 z-10 w-full px-6 pb-28 pt-6 text-summit-white sm:px-8 sm:pt-8">
+                  <div className="w-full max-w-lg">
+                    <TextFade direction="up" staggerChildren={0.15}>
+                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                        Professional Installations
+                      </h6>
+                      <p>
+                        We maintain professionalism throughout every stage of the project
+                      </p>
+                    </TextFade>
                   </div>
                 </div>
               </div>
             </CarouselItem>
+
             {/* Slide 2 */}
-            <CarouselItem className="pl-0">
-              <div className="relative inline-block size-full whitespace-normal text-left align-top">
-                <div className="flex h-screen flex-col">
-                  <div className="relative flex-1">
-                    <img
-                      className="absolute size-full object-cover"
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689043/roof-repair-clean_viyxzl.avif"
-                      alt="Construction workers inspecting roof"
-                    />
-                  </div>
-                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
-                    <div className="w-full max-w-lg">
-                      <TextFade direction="up" staggerChildren={0.15}>
-                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                          Thorough Inspections
-                        </h6>
-                        <p>
-                          We evaluate your roof's condition to ensure safety during inclement weather
-                        </p>
-                      </TextFade>
-                    </div>
+
+            <CarouselItem className="h-screen pl-0 lg:h-[45rem]">
+              <div className="relative h-full whitespace-normal text-left">
+                <img
+                  className="absolute inset-0 size-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999514/pexels-cristian-rojas-8853521_cdegfm_9d8ca4.avif"
+                  alt="Construction workers inspecting roof"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+                <div className="absolute bottom-0 left-0 z-10 w-full px-6 pb-28 pt-6 text-summit-white sm:px-8 sm:pt-8">
+                  <div className="w-full max-w-lg">
+                    <TextFade direction="up" staggerChildren={0.15}>
+                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                        Thorough Inspections
+                      </h6>
+                      <p>
+                        We evaluate your roof's condition to ensure safety during inclement weather
+                      </p>
+                    </TextFade>
                   </div>
                 </div>
               </div>
             </CarouselItem>
+
             {/* Slide 3 */}
-            <CarouselItem className="pl-0">
-              <div className="relative inline-block size-full whitespace-normal text-left align-top">
-                <div className="flex h-screen flex-col">
-                  <div className="relative flex-1">
-                    <img
-                      className="absolute size-full object-cover"
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
-                      alt="Construction worker repairing roof"
-                    />
-                  </div>
-                  <div className="relative bg-summit-off-white px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
-                    <div className="w-full max-w-lg">
-                      <TextFade direction="up" staggerChildren={0.15}>
-                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                          Efficient Repairs
-                        </h6>
-                        <p>
-                          We quickly fix roof damage to restore safety and prevent further issues
-                        </p>
-                      </TextFade>
-                    </div>
+
+            <CarouselItem className="h-screen pl-0 lg:h-[45rem]">
+              <div className="relative h-full whitespace-normal text-left">
+                <img
+                  className="absolute inset-0 size-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1790002274/pexels-clement-proust-363898785-31763541_xzmwvl_9d2979.avif"
+                  alt="Construction worker repairing roof"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+                <div className="absolute bottom-0 left-0 z-10 w-full px-6 pb-28 pt-6 text-summit-white sm:px-8 sm:pt-8">
+                  <div className="w-full max-w-lg">
+                    <TextFade direction="up" staggerChildren={0.15}>
+                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                        Efficient Repairs
+                      </h6>
+                      <p>
+                        We quickly fix roof damage to restore safety and prevent further issues
+                      </p>
+                    </TextFade>
                   </div>
                 </div>
               </div>
             </CarouselItem>
+
           </CarouselContent>
           <div className="flex items-center justify-between pl-4">
-            <div className="absolute bottom-[52px] left-8 right-auto top-auto flex w-full items-start justify-start">
+            <div className="absolute bottom-[52px] left-8 right-auto top-auto z-20 flex w-full items-start justify-start">
               <button
                 onClick={carousel.handleDotClick(0)}
                 className={carousel.dotClassName(0)}
@@ -198,8 +203,8 @@ export function Header102() {
                 className={carousel.dotClassName(2)}
               />
             </div>
-            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-summit-charcoal-5 border-none md:right-24" />
-            <CarouselNext className="bottom-2 left-auto right-8 top-auto size-12 bg-summit-charcoal-5 border-none" />
+            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto z-20 size-12 text-summit-white  border-2 border-summit-white bg-summit-green md:right-24" />
+            <CarouselNext className="bottom-2 left-auto right-8 top-auto z-20 size-12 border-2 border-summit-white text-summit-white bg-summit-green" />
           </div>
         </Carousel>
       </div>
