@@ -143,24 +143,12 @@ export function Navbar5() {
               onMouseLeave={useActive.closeOnDesktopDropdownMenu}
             >
               <button
-                className="flex w-full items-center justify-between gap-x-2 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:px-4 lg:py-6 lg:text-base nav-h-effect"
+                className={`flex w-full items-center justify-between gap-x-2 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:px-4 lg:py-6 lg:text-base nav-h-effect ${useActive.isDropdownOpen ? "nav-h-effect-active" : ""}`}
                 onClick={useActive.openOnMobileDropdownMenu}
+                aria-expanded={useActive.isDropdownOpen}
               >
-                <span
-                  className={
-                    useActive.isDropdownOpen
-                      ? "text-summit-green-lightest underline underline-offset-8"
-                      : undefined
-                  }
-                >
-                  Services
-                </span>
+                <span>Services</span>
                 <motion.span
-                  className={
-                    useActive.isDropdownOpen
-                      ? "text-summit-green-lightest"
-                      : undefined
-                  }
                   variants={{
                     rotated: { rotate: 180 },
                     initial: { rotate: 0 },

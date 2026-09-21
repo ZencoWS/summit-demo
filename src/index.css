@@ -69,4 +69,8 @@
   .nav-h-effect {
     @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-8 hover:duration-300 hover:ease-in-out;
   }
+
+  .nav-h-effect-active {
+    @apply text-summit-green-lightest underline underline-offset-8;
+  }
 }
