@@ -36,7 +36,7 @@ export function SectionTopOne(props) {
         </TextFade>
       </div>
 
-      {/* Hairline rule separating the header from the cards grid below */}
+      {/* Horizontal line rule separating the header from the cards grid below */}
       <div
         aria-hidden="true"
         className="mt-10 border-t-2 border-summit-green-lightest md:mt-14"
