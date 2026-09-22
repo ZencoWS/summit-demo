@@ -91,4 +91,8 @@
     @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-8 hover:duration-300 hover:ease-in-out;
   }
 
+  .card-tags-hover {
+    @apply hover:text-summit-charcoal hover:bg-summit-off-white hover:border-2 hover:border-summit-charcoal hover:duration-300 hover:ease-in-out;
+  }
+
 }

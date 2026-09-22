@@ -2,7 +2,13 @@
 
 import { TextFade } from "../animations/TextFade";
 
-export function RecentWorkHeader() {
+export function SectionTopOne(props) {
+
+  let sectNumber = props.sectNumber;
+  let sectTitle = props.sectTitle;
+  let heading = props.heading;
+  let description = props.description;
+
   return (
     <div className="relative mb-12 md:mb-18 lg:mb-20">
 
@@ -14,17 +20,17 @@ export function RecentWorkHeader() {
       <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-2 md:gap-12 lg:gap-20">
         <TextFade direction="up" staggerChildren={0.2}>
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest">
-            01 / Our recent work
+            {sectNumber} / {sectTitle}
           </p>
         </TextFade>
 
         <TextFade direction="up" staggerChildren={0.2}>
           <div className="flex flex-col items-start text-left text-summit-off-white">
             <h2 className="mb-5 text-5xl font-bold uppercase md:mb-6 md:text-7xl lg:text-8xl">
-              Roofing built to last
+              {heading}
             </h2>
             <p className="md:text-md">
-              Explore our roofing services. Images shown are stock references.
+              {description}
             </p>
           </div>
         </TextFade>

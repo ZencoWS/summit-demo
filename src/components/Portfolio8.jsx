@@ -7,13 +7,22 @@ import {
   AnimatedCard,
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
-import { RecentWorkHeader } from "./RecentWorkHeader";
+import { SectionTopOne
+
+
+
+ } from "./SectionTopOne";
 
 export function Portfolio8() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-summit-green">
       <div className="container">
-          <RecentWorkHeader />
+          <SectionTopOne
+            sectNumber="01"
+            sectTitle="Our recent work"
+            heading="Roofing built to last"
+            description="Every roof tells a story. Here's some of ours, showcasing the care, craftsmanship, and attention to detail behind every project."
+          />
           {/* Animate Sect */}
           <div className="relative grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:gap-x-12">
             {/* Animate here */}
@@ -40,7 +49,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/services/roofing"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Roofing
                         </a>
@@ -48,7 +57,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/service-areas/centurion"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Centurion
                         </a>
@@ -56,7 +65,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/projects/residential"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Residential
                         </a>
@@ -100,7 +109,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/services/roof-repair"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Repair
                         </a>
@@ -108,7 +117,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/service-areas/midstream"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Midstream
                         </a>
@@ -116,7 +125,7 @@ export function Portfolio8() {
                       <li className="flex">
                         <a
                           href="/projects/recent-work"
-                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md"
+                          className="bg-summit-charcoal px-2 py-1 text-sm font-semibold text-summit-off-white border-2 border-summit-off-white rounded-md card-tags-hover"
                         >
                           Recent work
                         </a>
