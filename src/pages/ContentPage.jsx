@@ -5,14 +5,15 @@ import { Footer6 } from "../components/Footer6";
 import { Navbar5 } from "../components/Navbar5";
 
 const sectionCopy = {
-  about: "Learn more about Falcon Roofing, our workmanship, and the team behind every project.",
-  contact: "Speak to the Falcon Roofing team about your roof, ceiling, or partition project.",
-  projects: "Explore roofing, ceiling, and partition work completed by Falcon Roofing.",
-  quote: "Tell us about your project and we’ll help you plan the right next step.",
-  resources: "Practical roofing guidance and updates from recent Falcon Roofing projects.",
-  services: "Explore Falcon Roofing’s inspection, installation, repair, ceiling, and partition services.",
-  "service-areas": "Reliable roofing services across Centurion, Midrand, Rustenburg, and surrounding areas.",
-  legal: "Important information about using the Falcon Roofing website and services.",
+  about: "Learn more about Summit Roofing, our workmanship, and the team behind every project.",
+  region: "Contact our team to determine whether we provide services in your region.",
+  contact: "Speak to the Summit Roofing team about your roof, ceiling, or partition project.",
+  projects: "Explore roofing, ceiling, and partition work completed by Summit Roofing.",
+  quote: "Tell us about your project and we'll help you plan the right next step.",
+  resources: "Practical roofing guidance and updates from recent Summit Roofing projects.",
+  services: "Explore Summit Roofing's inspection, installation, repair, ceiling, and partition services.",
+  "service-areas": "Reliable roofing services across Centurion, Midrand and surrounding areas. Contact our team to determine whether we provide services in your region.",
+  legal: "Important information about using the Summit Roofing website and services.",
 };
 
 const humanize = (value) =>
@@ -40,7 +41,7 @@ export default function ContentPage() {
       <section className="px-[5%] py-20 md:py-28 lg:py-36">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest">
-            Falcon Roofing
+            Summit Roofing Co.
           </p>
           <h1 className="mb-6 text-6xl font-bold md:text-8xl lg:text-9xl">
             {title}

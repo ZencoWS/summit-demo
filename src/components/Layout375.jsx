@@ -7,37 +7,35 @@ import {
   AnimatedCard,
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
+import SectionTopTwo from "./SectionTopTwo";
 
 export function Layout375() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
       <div className="container">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
-          <div className="mx-auto max-w-lg text-center">
-            <TextFade direction="up" staggerChildren={0.2}>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4">Services</p>
-              <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-                What we do
-              </h2>
-              <p className="md:text-md">
-                Roofing, ceilings and partitions. Done properly, the first time.
-              </p>
-            </TextFade>
-          </div>
+          <SectionTopTwo 
+            sectNumber="04"
+            sectTitle="Our Services"
+            heading="Details Make The Difference"
+            description="We take on the essential parts of your project; from the first inspection to the final, cleaned-up site."
+            linkUrl="/projects"
+            linkText="Previous Work"
+          />
         </div>
         <div className="grid grid-cols-1 gap-6 md:gap-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
             {/* Card 1 */}
             <AnimatedCardSection className="flex flex-col"> 
               <AnimatedCard direction="left" delay={0.2}>
-                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
+                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689043/roof-repair-clean_viyxzl.avif"
+                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999568/man-on-roof_uc27lg_9d8ca4.avif"
                     alt="Experst inspecting roof"
                     className="size-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-summit-off-white shadow-large">
+                <div className="flex flex-col justify-center text-summit-white p-6 rounded-b-md bg-summit-green-dark shadow-large">
                   <div>
                     <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-summit-green-lightest">Inspect</p>
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
@@ -48,7 +46,7 @@ export function Layout375() {
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
                       asChild
-                      className="font-semibold text-summit-green-lightest"
+                      className="font-semibold text-summit-white link-h-effect"
                       title="More"
                       variant="link"
                       size="link"
@@ -63,14 +61,14 @@ export function Layout375() {
             {/* Card 2 */}
             <AnimatedCardSection className="flex flex-col">
               <AnimatedCard direction="left" delay={0.2}>
-                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
+                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689045/still-3-clean_hwsymw.avif"
+                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999573/jametlene-reskp-tiles_u9gsng_9d8ca4.avif"
                     alt="New roof installation"
                     className="size-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-summit-off-white shadow-large">
+                <div className="flex flex-col justify-center text-summit-white  p-6 rounded-b-md bg-summit-green-dark shadow-large">
                   <div>
                     <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-summit-green-lightest">Install</p>
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
@@ -81,7 +79,7 @@ export function Layout375() {
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
                       asChild
-                      className="font-semibold text-summit-green-lightest"
+                      className="font-semibold text-summit-white link-h-effect"
                       title="More"
                       variant="link"
                       size="link"
@@ -96,14 +94,14 @@ export function Layout375() {
             {/* Card 3 */}
             <AnimatedCardSection className="flex flex-col">
               <AnimatedCard direction="left" delay={0.2}>
-                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
+                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787778293/roof-repair_shxdeo.avif"
+                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999542/damaged-roof_fguymy_9d8ca4.avif"
                     alt="Repaired zinc roof"
                     className="size-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-summit-off-white shadow-large">
+                <div className="flex flex-col justify-center text-summit-white  p-6 rounded-b-md bg-summit-green-dark shadow-large">
                   <div>
                     <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-summit-green-lightest">Repair</p>
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
@@ -114,7 +112,7 @@ export function Layout375() {
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
                       asChild
-                      className="font-semibold text-summit-green-lightest"
+                      className="font-semibold text-summit-white link-h-effect"
                       title="More"
                       variant="link"
                       size="link"
@@ -129,14 +127,14 @@ export function Layout375() {
             {/* Card 4 */}
             <AnimatedCardSection className="flex flex-col">
               <AnimatedCard direction="left" delay={0.2}>
-                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
+                <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
+                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999555/insulated_tr4xv2_9d8ca4.avif"
                     alt="Roof being restored after damage"
                     className="size-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-summit-off-white shadow-large">
+                <div className="flex flex-col justify-center text-summit-white p-6 rounded-b-md bg-summit-green-dark shadow-large">
                   <div>
                     <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-summit-green-lightest">Restore</p>
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
@@ -147,7 +145,7 @@ export function Layout375() {
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
                       asChild
-                      className="font-semibold text-summit-green-lightest"
+                      className="font-semibold text-summit-white link-h-effect"
                       title="More"
                       variant="link"
                       size="link"
@@ -166,14 +164,14 @@ export function Layout375() {
                 delay={0.2}
                 className="flex h-full min-h-0 flex-col"
               >
-                <div className="flex items-center justify-center aspect-[610/360] w-full overflow-hidden rounded-t-3xl">
+                <div className="flex items-center justify-center aspect-[610/360] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787776381/ceiling-2_fgs3ud.avif"
+                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999564/brett-jordan-ceiling_rvypi5_9d8ca4.avif"
                     alt="Ceiling"
                     className="size-full object-cover"
                   />
                 </div>
-                <div className="flex flex-1 flex-col justify-center p-6 md:p-8 lg:p-12 rounded-b-3xl bg-summit-off-white shadow-large">
+                <div className="flex flex-1 flex-col justify-center p-6 text-summit-white md:p-8 lg:p-12 rounded-b-md bg-summit-green-dark shadow-large">
                   <div>
                     <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-summit-green-lightest">Finish</p>
                     <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
@@ -186,12 +184,12 @@ export function Layout375() {
                     </p>
                   </div>
                   <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                    <Button asChild className="button-summit-secondary text-summit-charcoal bg-summit-charcoal-5 border-border-ink-5" title="All services" variant="secondary">
+                    <Button asChild className="button-summit-primary text-summit-white bg-summit-green" title="All services" variant="secondary">
                       <a href="/services">All services</a>
                     </Button>
                     <Button
                       asChild
-                      className="font-semibold text-summit-green-lightest"
+                      className="font-semibold text-summit-white link-h-effect"
                       title="Get a quote"
                       variant="link"
                       size="link"

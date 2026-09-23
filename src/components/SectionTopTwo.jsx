@@ -10,6 +10,7 @@ export default function SectionTopTwo(props) {
     let sectTitle = props.sectTitle;
     let heading = props.heading;
     let description = props.description;
+    let link = props.linkUrl;
     let linkText = props.linkText;
 
 
@@ -37,12 +38,12 @@ export default function SectionTopTwo(props) {
                         <Button
                           asChild
                           className="text-sm font-semibold text-summit-charcoal md:text-base link-h-effect"
-                          title="Our work"
+                          title={linkText}
                           variant="link"
                           size="link"
                           iconRight={<RxChevronRight className="text-summit-green-lightest"/>}
                         >
-                          <a href="/projects">{linkText}</a>
+                          <a href={link}>{linkText}</a>
                         </Button>
                     </div>
                 </TextFade>

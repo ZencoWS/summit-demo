@@ -26,6 +26,7 @@ export function Layout504() {
             sectTitle="Why Summit"
             heading="Quality That Holds"
             description="Clear advice, careful workmanship and a practical plan for your roof. Know what needs doing and what to expect at every step."
+            linkUrl="/services"
             linkText="Explore services"
           />
         </div>
