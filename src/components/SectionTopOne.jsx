@@ -7,6 +7,7 @@ export function SectionTopOne(props) {
   let sectNumber = props.sectNumber;
   let sectTitle = props.sectTitle;
   let heading = props.heading;
+  let colorText = props.colorText;
   let description = props.description;
 
   return (
@@ -27,7 +28,7 @@ export function SectionTopOne(props) {
         <TextFade direction="up" staggerChildren={0.2}>
           <div className="flex flex-col items-start text-left text-summit-off-white">
             <h2 className="mb-5 text-5xl font-bold uppercase md:mb-6 md:text-7xl lg:text-8xl">
-              {heading}
+              {heading}<span className="text-summit-green-lighter">{colorText}</span>
             </h2>
             <p className="md:text-md">
               {description}

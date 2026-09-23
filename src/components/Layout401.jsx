@@ -13,29 +13,26 @@ import {
   AnimatedCard,
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
+import { SectionTopOne } from "./SectionTopOne";
 
 export function Layout401() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-summit-green">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
-          <div className="mx-auto max-w-lg text-center">
-            <TextFade direction="up" staggerChildren={0.2}>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-summit-green-lightest md:mb-4">Process</p>
-              <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-                How it works
-              </h1>
-              <p className="md:text-md">
-                Four steps from first message to finished work.
-              </p>
-            </TextFade>
-          </div>
+          <SectionTopOne 
+            sectNumber="03"
+            sectTitle="How We Work"
+            heading="PROPER WORK."
+            colorText=" CLEAR COMMUNICATION."
+            description="Starting with the initial discussion, your project proceeds through four distinct phases; planning, preparation, installation, and final completion."
+          />
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
           {/* Animate here */}
           <AnimatedCardSection>
             <AnimatedCard direction="left" delay={0.2}>    
-              <div className="flex flex-col justify-center bg-summit-off-white rounded-3xl p-6 shadow-large">
+              <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
                     src={requestIcon}
@@ -52,7 +49,7 @@ export function Layout401() {
                 <div className="mt-5 md:mt-6">
                   <Button
                     asChild
-                    className="font-semibold text-summit-green-lightest"
+                    className="font-semibold text-summit-white link-h-effect"
                     title="Start"
                     variant="link"
                     size="link"
@@ -67,7 +64,7 @@ export function Layout401() {
           {/* Animate here */}
           <AnimatedCardSection>
             <AnimatedCard direction="left" delay={0.2}>
-              <div className="flex flex-col justify-center bg-summit-off-white rounded-3xl p-6 shadow-large">
+              <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
                     src={propertyIcon}
@@ -84,7 +81,7 @@ export function Layout401() {
                 <div className="mt-5 md:mt-6">
                   <Button
                     asChild
-                    className="font-semibold text-summit-green-lightest"
+                    className="font-semibold text-summit-white link-h-effect"
                     title="Next"
                     variant="link"
                     size="link"
@@ -99,7 +96,7 @@ export function Layout401() {
           {/* Animate here */}
           <AnimatedCardSection> 
             <AnimatedCard direction="left" delay={0.2}>
-              <div className="flex flex-col justify-center bg-summit-off-white rounded-3xl roun p-6 shadow-large">
+              <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md roun p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
                     src={receiveIcon}
@@ -116,7 +113,7 @@ export function Layout401() {
                 <div className="mt-5 md:mt-6">
                   <Button
                     asChild
-                    className="font-semibold text-summit-green-lightest"
+                    className="font-semibold text-summit-white link-h-effect"
                     title="Next"
                     variant="link"
                     size="link"
@@ -131,7 +128,7 @@ export function Layout401() {
           {/* Animate here */}
           <AnimatedCardSection>
             <AnimatedCard direction="left" delay={0.2}>
-              <div className="flex flex-col justify-center bg-summit-off-white rounded-3xl p-6 shadow-large">
+              <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
                     src={constructionIcon}
@@ -148,7 +145,7 @@ export function Layout401() {
                 <div className="mt-5 md:mt-6">
                   <Button
                     asChild
-                    className="font-semibold text-summit-green-lightest"
+                    className="font-semibold text-summit-white link-h-effect"
                     title="Finish"
                     variant="link"
                     size="link"
