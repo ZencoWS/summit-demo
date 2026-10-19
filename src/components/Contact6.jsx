@@ -23,6 +23,7 @@ import {
 } from "../animations/AnimatedCardSection";
 import { cn } from "../lib/cn";
 import { iframe } from "framer-motion/client";
+import { optimize } from "../utils/cloudinary";
 
 const INITIAL_FORM_VALUES = {
   name: "",
@@ -91,7 +92,10 @@ export function Contact6() {
     <section id="quote" className="relative overflow-hidden scroll-mt-6 px-[5%] py-16 md:py-24 lg:py-28">
       <div
         aria-hidden="true"
-        className="absolute inset-0 z-0 bg-[url(https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999547/beams_frhpgr_9d8ca4.avif)] bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999547/beams_frhpgr_9d8ca4.avif", "f_auto,q_auto:best,w_1600,c_fill")})`,
+        }}
       />
       <div
         aria-hidden="true"

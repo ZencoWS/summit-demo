@@ -6,6 +6,7 @@ import { BiBell, BiCheck } from "react-icons/bi";
 import { FaFacebookSquare, FaTiktok, FaWhatsappSquare } from "react-icons/fa";
 import { cn } from "../lib/cn";
 import summitLogo from "../assets/summit-roofing-logo(no-bg).png";
+import { optimize } from "../utils/cloudinary";
 
 const BUTTON_LABELS = {
   idle: "Subscribe",
@@ -276,7 +277,7 @@ export function Footer6() {
         <div className="flex flex-col items-start pb-4 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between md:pb-0 md:pt-8">
           <a href="/" className="mb-6 sm:mb-0" aria-label="Falcon Roofing home">
             <img
-              src={summitLogo}
+              src={optimize(summitLogo)}
               width="65px"
               alt="Logo image"
             />

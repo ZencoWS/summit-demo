@@ -12,6 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { TextFade } from "../animations/TextFade";
+import { optimize } from "../utils/cloudinary";
 
 const useCarousel = () => {
   const [api, setApi] = useState();
@@ -118,7 +119,7 @@ export function Header102() {
               <div className="relative h-full whitespace-normal text-left">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999559/roof-install_z3hnws_9d8ca4.avif"
+                  src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999559/roof-install_z3hnws_9d8ca4.avif")}
                   alt="Complete roof"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
@@ -143,7 +144,7 @@ export function Header102() {
               <div className="relative h-full whitespace-normal text-left">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999514/pexels-cristian-rojas-8853521_cdegfm_9d8ca4.avif"
+                  src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999514/pexels-cristian-rojas-8853521_cdegfm_9d8ca4.avif")}
                   alt="Construction workers inspecting roof"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
@@ -168,7 +169,7 @@ export function Header102() {
               <div className="relative h-full whitespace-normal text-left">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1790002274/pexels-clement-proust-363898785-31763541_xzmwvl_9d2979.avif"
+                  src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1790002274/pexels-clement-proust-363898785-31763541_xzmwvl_9d2979.avif")}
                   alt="Construction worker repairing roof"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />

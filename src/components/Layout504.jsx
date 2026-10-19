@@ -15,6 +15,7 @@ import {
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
 import SectionTopTwo from "./SectionTopTwo";
+import { optimize } from "../utils/cloudinary";
 
 export function Layout504() {
   return (
@@ -66,7 +67,7 @@ export function Layout504() {
                 <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
                   <div className="aspect-square w-full overflow-hidden rounded-t-md sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-md md:rounded-r-none shadow-large">
                     <img
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999537/green-roof-install_arsi7z_9d8ca4.avif"
+                      src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999537/green-roof-install_arsi7z_9d8ca4.avif")}
                       className="size-full object-cover h-[480px]"
                       alt="Tiles being add to roof structure"
                     />
@@ -111,7 +112,7 @@ export function Layout504() {
                 <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
                   <div className="aspect-square w-full overflow-hidden rounded-t-md sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-md md:rounded-r-none shadow-large">
                     <img
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1790119076/copy_of_pexels-clement-proust-363898785-31771166_zpdvpg.avif"
+                      src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1790119076/copy_of_pexels-clement-proust-363898785-31771166_zpdvpg.avif")}
                       className="size-full object-cover h-[480px]"
                       alt="Roof with solar pannels"
                     />
@@ -155,7 +156,7 @@ export function Layout504() {
                 <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
                   <div className="aspect-square w-full overflow-hidden rounded-t-md sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-md md:rounded-r-none shadow-large">
                     <img
-                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999547/beams_frhpgr_9d8ca4.avif"
+                      src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999547/beams_frhpgr_9d8ca4.avif")}
                       className="size-full object-cover h-[480px]"
                       alt="Roof underconstruction"
                     />

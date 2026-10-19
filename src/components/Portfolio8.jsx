@@ -12,6 +12,7 @@ import { SectionTopOne
 
 
  } from "./SectionTopOne";
+import { optimize } from "../utils/cloudinary";
 
 export function Portfolio8() {
   return (
@@ -32,7 +33,7 @@ export function Portfolio8() {
                   <div className="aspect-[615/345] w-full overflow-hidden rounded-t-md">
                     <a href="/projects/centurion-roof-replacement" className="block size-full">
                       <img
-                        src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999551/water-proofed_b6n2ij_9d8ca4.avif"
+                        src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999551/water-proofed_b6n2ij_9d8ca4.avif")}
                         className="size-full object-cover"
                         alt="Centurion Roof Replacement"
                       />
@@ -92,7 +93,7 @@ export function Portfolio8() {
                   <div className="aspect-[615/345] w-full overflow-hidden rounded-t-md"> 
                     <a href="/projects/midstream-roof-repair" className="block size-full">
                       <img
-                        src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999578/stop-a-tiled-roof-from-leaking_azaveu_9d8ca4.avif"
+                        src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999578/stop-a-tiled-roof-from-leaking_azaveu_9d8ca4.avif")}
                         className="size-full object-cover"
                         alt="Worker fixing zinc panels"
                       />
@@ -139,7 +140,7 @@ export function Portfolio8() {
                       iconRight={<RxChevronRight />}
                       className="mt-5 font-semibold text-summit-off-white md:mt-6 link-h-effect"
                     >
-                      <a href="/projects/midstream-roof-repair">Discuss your roof</a>
+                      <a href="#quote">Discuss your roof</a>
                     </Button>
                   </div>
                 </article>

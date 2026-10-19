@@ -14,6 +14,7 @@ import {
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
 import { SectionTopOne } from "./SectionTopOne";
+import { optimize } from "../utils/cloudinary";
 
 export function Layout401() {
   return (
@@ -35,7 +36,7 @@ export function Layout401() {
               <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
-                    src={requestIcon}
+                    src={optimize(requestIcon)}
                     className="size-12"
                     alt="Request Icon"
                     width={48}
@@ -67,7 +68,7 @@ export function Layout401() {
               <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
-                    src={propertyIcon}
+                    src={optimize(propertyIcon)}
                     className="size-12"
                     alt="Roof Icon"
                     width={48}
@@ -99,7 +100,7 @@ export function Layout401() {
               <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md roun p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
-                    src={receiveIcon}
+                    src={optimize(receiveIcon)}
                     className="size-12"
                     alt="Review Icon"
                     width={48}
@@ -131,7 +132,7 @@ export function Layout401() {
               <div className="flex flex-col justify-center text-summit-white bg-summit-green-dark rounded-md p-6 shadow-large">
                 <div className="mb-3 md:mb-4">
                   <img
-                    src={constructionIcon}
+                    src={optimize(constructionIcon)}
                     className="size-12"
                     alt="Wrench and Hammer Icon"
                     width={48}

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { StaggeredFade } from "../animations/StaggeredFade";
 import { TextFade } from "../animations/TextFade";
 import falconLogoWhite from "../assets/Falcon-roofing-logo-white.png";
+import { optimize } from "../utils/cloudinary";
 
 export function Header138() {
   return (
@@ -13,7 +14,7 @@ export function Header138() {
         <div className="relative flex-1">
           <img
             className="absolute inset-0 aspect-[3/2] size-full object-cover"
-            src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689052/builder-onsite-clean_npxkfv.avif"
+            src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689052/builder-onsite-clean_npxkfv.avif")}
             alt="Worker climbing ladder to build roof"
           />
         </div>

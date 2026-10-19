@@ -6,6 +6,7 @@ import { useState } from "react";
 import { BiNotepad, BiPhoneCall } from "react-icons/bi";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
 import summitLogo from "../assets/summit-roofing-logo(no-bg).png";
+import { optimize } from "../utils/cloudinary";
 
 // Service Drop down Icons:
 import roofIcon from "../assets/icons/roof.svg"
@@ -61,7 +62,7 @@ export function Navbar5() {
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="/" aria-label="Falcon Roofing home">
               <img
-                src={summitLogo}
+                src={optimize(summitLogo)}
                 width="65px"
                 alt="Falcon Roofing"
               />
@@ -191,7 +192,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={roofIcon}
+                              src={optimize(roofIcon)}
                               alt="Icon 1"
                               width={24}
                               height={24}
@@ -210,7 +211,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={roofIcon}
+                              src={optimize(roofIcon)}
                               alt="Icon 2"
                               width={24}
                               height={24}
@@ -229,7 +230,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={roofIcon}
+                              src={optimize(roofIcon)}
                               alt="Icon 3"
                               width={24}
                               height={24}
@@ -248,7 +249,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={stairsIcon}
+                              src={optimize(stairsIcon)}
                               alt="Icon 4"
                               width={24}
                               height={24}
@@ -272,7 +273,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={bagIcon}
+                              src={optimize(bagIcon)}
                               alt="Icon 5"
                               width={24}
                               height={24}
@@ -291,7 +292,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={contactsIcon}
+                              src={optimize(contactsIcon)}
                               alt="Icon 6"
                               width={24}
                               height={24}
@@ -310,7 +311,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={bellIcon}
+                              src={optimize(bellIcon)}
                               alt="Icon 7"
                               width={24}
                               height={24}
@@ -329,7 +330,7 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src={workIcon}
+                              src={optimize(workIcon)}
                               alt="Icon 8"
                               width={24}
                               height={24}
@@ -356,7 +357,7 @@ export function Navbar5() {
                           >
                             <div className="relative w-full pt-[66.66%]">
                               <img
-                                src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
+                                src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif")}
                                 alt="Worker repairing roof"
                                 className="absolute inset-0 size-full object-cover rounded-2xl"
                               />
@@ -377,7 +378,7 @@ export function Navbar5() {
                           >
                             <div className="relative w-full pt-[66.66%]">
                               <img
-                                src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689054/roof-1-clean_n5euhk.avif"
+                                src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689054/roof-1-clean_n5euhk.avif")}
                                 alt="Picture of workers on roof in latest intallation"
                                 className="absolute inset-0 size-full object-cover rounded-2xl"
                               />

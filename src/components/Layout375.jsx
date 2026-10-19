@@ -8,6 +8,7 @@ import {
   AnimatedCardSection,
 } from "../animations/AnimatedCardSection";
 import SectionTopTwo from "./SectionTopTwo";
+import { optimize } from "../utils/cloudinary";
 
 export function Layout375() {
   return (
@@ -30,7 +31,7 @@ export function Layout375() {
               <AnimatedCard direction="left" delay={0.2}>
                 <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999568/man-on-roof_uc27lg_9d8ca4.avif"
+                    src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999568/man-on-roof_uc27lg_9d8ca4.avif")}
                     alt="Experst inspecting roof"
                     className="size-full object-cover"
                   />
@@ -63,7 +64,7 @@ export function Layout375() {
               <AnimatedCard direction="left" delay={0.2}>
                 <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999573/jametlene-reskp-tiles_u9gsng_9d8ca4.avif"
+                    src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999573/jametlene-reskp-tiles_u9gsng_9d8ca4.avif")}
                     alt="New roof installation"
                     className="size-full object-cover"
                   />
@@ -96,7 +97,7 @@ export function Layout375() {
               <AnimatedCard direction="left" delay={0.2}>
                 <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999542/damaged-roof_fguymy_9d8ca4.avif"
+                    src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999542/damaged-roof_fguymy_9d8ca4.avif")}
                     alt="Repaired zinc roof"
                     className="size-full object-cover"
                   />
@@ -129,7 +130,7 @@ export function Layout375() {
               <AnimatedCard direction="left" delay={0.2}>
                 <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999555/insulated_tr4xv2_9d8ca4.avif"
+                    src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999555/insulated_tr4xv2_9d8ca4.avif")}
                     alt="Roof being restored after damage"
                     className="size-full object-cover"
                   />
@@ -166,7 +167,7 @@ export function Layout375() {
               >
                 <div className="flex items-center justify-center aspect-[610/360] w-full overflow-hidden rounded-t-md">
                   <img
-                    src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999564/brett-jordan-ceiling_rvypi5_9d8ca4.avif"
+                    src={optimize("https://res.cloudinary.com/fjyy6lhd/image/upload/v1789999564/brett-jordan-ceiling_rvypi5_9d8ca4.avif")}
                     alt="Ceiling"
                     className="size-full object-cover"
                   />
