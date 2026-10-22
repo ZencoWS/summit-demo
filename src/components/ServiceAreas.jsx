@@ -56,7 +56,7 @@ const defaultAreas = [
 export default function ServiceAreasSection({
   sectNumber="06",
   sectTitle="Where We Work",
-  heading="Proudlt Local",
+  heading="Proudly Local",
   description="Based in Centurion and serving homes and businesses in Midrand, Pretoria and surrounding areas.",
   link="/areas",
   linkText="Check your area",

@@ -7,6 +7,7 @@ import { Layout375 } from "../components/Layout375";
 import { Contact6 } from "../components/Contact6";
 import { Footer6 } from "../components/Footer6";
 import ServiceAreasSection from "../components/ServiceAreas";
+import CustomerReviewsSect from "../components/CustomerReviews";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <Layout504 />
       <Layout401 />
       <Layout375 />
+      <CustomerReviewsSect />
       <ServiceAreasSection />
       <Contact6 />
       <Footer6 />
