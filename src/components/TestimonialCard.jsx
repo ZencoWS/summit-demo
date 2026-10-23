@@ -16,7 +16,7 @@ export default function Testimonial(info) {
     
 
     return (
-        <article className="flex flex-col gap-4 bg-summit-green-lightest px-8 py-8 w-[400px] h-[250px] text-summit-white rounded-md">
+        <article className="flex w-full max-w-[330px] min-h-[288px] flex-col gap-4 rounded-md bg-summit-green-lightest px-8 py-8 text-summit-white min-[480px]:h-[250px] min-[480px]:min-h-[250px] min-[480px]:w-[400px] min-[480px]:max-w-none min-[480px]:gap-2 min-[480px]:px-6 min-[480px]:py-6">
             {/* Stars */}
             <div>
                 <ul className="flex flex-row gap-1 justify-start items-start">
@@ -33,7 +33,7 @@ export default function Testimonial(info) {
                 </ul>
             </div>
             {/* Message */}
-            <div className="mt-2 flex justify-start items-start text-start w-[100%]">
+            <div className="mt-2 flex w-full justify-start items-start text-start min-[480px]:mt-0">
                 <p className="text-balance text-[1.2rem]">
                     <ImQuotesLeft className="inline align-baseline mr-2 " />
                         {msg}
@@ -41,7 +41,7 @@ export default function Testimonial(info) {
                 </p>
             </div>
             {/* Reviewer Info */}
-            <div className="mt-2 flex flex-row gap-6 justify-start items-start">
+            <div className="mt-2 flex flex-row gap-6 justify-start items-start min-[480px]:mt-0">
                 <img src={optimize(pic)} className="rounded-[100%] w-[64px] h-[64px] object-cover object-center" />
                 <aside className="flex flex-col py-2">
                     <small className="font-medium text-md">{name}</small>
