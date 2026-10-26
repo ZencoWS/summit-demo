@@ -101,4 +101,31 @@
     @apply hover:text-summit-charcoal hover:bg-summit-off-white hover:border-2 hover:border-summit-charcoal hover:duration-300 hover:ease-in-out;
   }
 
+  /* Swiper contrl buttons (temp) 
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply text-summit-green;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-summit-green;
+  }
+  */
+  
+  .dummy-test {
+    @apply flex items-center justify-center text-center rounded-[100%] text-summit-charcoal w-10 h-10 bg-summit-green-lightest shadow-small;
+  }
+
+  /* Swiper controll buttons & pagination dots */
+  .review-control-button {
+    @apply inline-flex size-12 items-center justify-center rounded-full bg-summit-green text-summit-white transition-opacity disabled:opacity-40;
+  }
+  .review-pagination-bullet {
+    @apply block size-2 rounded-full bg-summit-charcoal/20 transition-colors;
+  }
+
+  .review-pagination-bullet-active {
+    @apply bg-summit-green;
+  }
+
 }
