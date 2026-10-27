@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 import { TextFade } from "../animations/TextFade";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y } from "swiper/modules";
+import { Navigation, Pagination, A11y, Keyboard, Autoplay } from "swiper/modules";
 import Testimonial from "./TestimonialCard";
 
 import "swiper/css";
@@ -79,161 +79,195 @@ export default function CustomerReviewsSect({
                 </div>
                 */}
                 <div className="px-2 py-2">
-                    <Swiper
-                        // Tailwind Styling
-                        className="w-full rounded-md"
-                        // Swiper modules
-                        modules={[Navigation, Pagination, A11y]}
-                        spaceBetween={1}
-                        slidesPerView={20}
-                        breakpoints={{
-                            // When the window width is >= 768px 
-                            768: {
-                                slidesPerView: 3,
-                                slidesPerGroup: 3,
-                                spaceBetween: 40,
-                            },
-                        }}
-                        navigation
-                        pagination={{ clickable: true }}
-                        onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = previousButtonRef.current;
-                            swiper.params.navigation.nextEl = nextButtonRef.current;
+                    <TextFade direction="up" staggerChildren={0.2}>
+                        <Swiper
+                            // Tailwind Styling
+                            className="w-full rounded-md"
+                            // Swiper modules
+                            modules={[Navigation, Pagination, A11y, Keyboard, Autoplay]}
+                            spaceBetween={1}
+                            slidesPerView={20}
+                            breakpoints={{
+                                // When the window width is >= 320px 
+                                320: {
+                                    slidesPerView: 1,
+                                    slidesPerGroup: 1,
+                                    spaceBetween: 20,
+                                },
 
-                            swiper.params.pagination.el = paginationRef.current;
-                            swiper.params.pagination.clickable = true;
-                            swiper.params.pagination.bulletClass = "review-pagination-bullet";
-                            swiper.params.pagination.bulletActiveClass = "review-pagination-bullet-active";
-                        }}
-                        
-                        scrollbar={{ draggable: true }}
-                        onSwiper={(swiper) => console.log}
-                        onSlideChange={() => console.log('slide change')}
-                    >
-                        <SwiperSlide className="h-auto">
-                            {/* Test: <article className="h-full rounded-lg bg-summit-green-lightest p-6 shadow-md">Slide 1</article> */}
-                            {/* Add h-full to card component */}
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />      
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />      
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />        
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                              <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />      
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                              <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />      
-                        </SwiperSlide>    
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide className="h-auto">
-                            <Testimonial 
-                                rating={4}
-                                message="They found the leak in twenty minutes. Fixed it the same day."
-                                profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
-                                name="Pieter Venter"
-                                property="Homeowner"
-                                location="Centurion"
-                            />      
-                        </SwiperSlide>    
-                    </Swiper> 
+                                // When the window width is >= 480px 
+                                480: {
+                                    slidesPerView: 1,
+                                    slidesPerGroup: 1,
+                                    spaceBetween: 30,
+                                },
+
+                                // When the window width is >= 640px
+                                640: {
+                                    slidesPerView: 1,
+                                    slidesPerGroup: 1,
+                                    spaceBetween: 35,
+                                },
+
+                                // When the window width is >= 769px 
+                                769: {
+                                    slidesPerView: 1,
+                                    slidesPerGroup: 1,
+                                    spaceBetween: 50,
+                                },
+                                // When the window width is >= 965px
+                                1080: {
+                                    slidesPerView: 3,
+                                    slidesPerGroup: 3,
+                                    spaceBetween: 60,
+                                }
+                            }}
+                            navigation={{
+                                prevEl: previousButtonRef.current,
+                                nextEl: nextButtonRef.current,
+                            }}
+                            pagination={{
+                                el: paginationRef.current,
+                                clickable: true,
+                                bulletClass: "review-pagination-bullet",
+                                bulletActiveClass: "review-pagination-bullet-active",
+                            }}
+                            autoplay={{ delay: 5000, enabled: true,  stopOnLastSlide: false, disableOnInteraction: true }}
+                            keyboard={{ enabled: true }}
+                            // Animating card content:
+                            speed={600}
+                            watchSlidesProgress
+                            onBeforeInit={(swiper) => {
+                                const navigation = {
+                                    prevEl: previousButtonRef.current,
+                                    nextEl: nextButtonRef.current,
+                                };
+                                const pagination = {
+                                    el: paginationRef.current,
+                                    clickable: true,
+                                    bulletClass: "review-pagination-bullet",
+                                    bulletActiveClass: "review-pagination-bullet-active",
+                                };
+
+                                Object.assign(swiper.params.navigation, navigation);
+                                Object.assign(swiper.originalParams.navigation, navigation);
+                                Object.assign(swiper.params.pagination, pagination);
+                                Object.assign(swiper.originalParams.pagination, pagination);
+                            }}
+                            
+                            scrollbar={{ draggable: true }}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            onSlideChange={() => console.log('slide change')}
+                        >
+                            <SwiperSlide className="h-auto">
+                                {/* Test: <article className="h-full rounded-lg bg-summit-green-lightest p-6 shadow-md">Slide 1</article> */}
+                                {/* Add h-full to card component */}
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={4}
+                                        message="They found the leak in twenty minutes. Fixed it the same day."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-paiva-31704065_p9mtmy.jpg"
+                                        name="Pieter Venter"
+                                        property="Homeowner"
+                                        location="Centurion"
+                                    />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide className="h-auto">
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={5}
+                                        message="The new roof went up fast. No mess left behind."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-boko-shots-812604874-20130727_b8mddf.jpg"
+                                        name="Sarah Nkosi"
+                                        property="Homeowner"
+                                        location="Centurion"
+                                    />
+                                </div>
+                            </SwiperSlide>    
+                            <SwiperSlide className="h-auto">
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={4}
+                                        message="Honest quote. The price did not change. The work was solid."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-kevin-birchfield-12896468-7400021_o5kixd.jpg"
+                                        name="Johan Botha"
+                                        property="Homeowner"
+                                        location="Centurion"
+                                    />      
+                                </div>
+                            </SwiperSlide>    
+                            <SwiperSlide className="h-auto">
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={4.4}
+                                        message="They repaired the hail damage before the next storm hit."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705419/pexels-ramyphotographer-36390233_zeknft.jpg"
+                                        name="Lerato Mokoena"
+                                        property="Homeowner"
+                                        location="Rustenburg"
+                                    />      
+                                </div>
+                            </SwiperSlide>    
+                            <SwiperSlide className="h-auto">
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={5}
+                                        message="The ceiling install was clean. The team knew their trade."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-d67-hunter-2154822929-36535613_dnnvsr.jpg"
+                                        name="Ashwin Naidoo"
+                                        property="Business owner"
+                                        location="Midrand"
+                                    />        
+                                </div>
+                            </SwiperSlide>    
+                            <SwiperSlide className="h-auto">
+                                <div className="review-slide-content">
+                                    <Testimonial 
+                                        rating={3.8}
+                                        message="They showed up on time. They did what they said they would."
+                                        profilePic="https://res.cloudinary.com/fjyy6lhd/image/upload/v1792705418/pexels-boko-shots-812604874-30386124_hlyyux.jpg"
+                                        name="Samkelo Zwide"
+                                        property="Homeowner"
+                                        location="Centurion"
+                                    />      
+                                </div>
+                            </SwiperSlide>        
+                        </Swiper> 
+                    </TextFade>
                 </div>
                 {/* Custom Bullets & buttons */}
-                <div className="mt-8 px-4 flex items-center justify-between">
-                    {/* Custom pagination dots */}
-                    <div 
-                        ref={paginationRef}
-                        type="button"
-                        className="flex items-center gap-2" 
-                        aria-label="Testimonial pages"
-                    />
-                    {/* Custom navigation buttons */}
-                    <div className="flex gap-4 justify-center">
-                        <button
-                            ref={previousButtonRef}
+                <TextFade direction={0.3} staggerChildren="up">
+                    <div className="mt-8 px-4 flex items-center justify-between">
+                        {/* Custom pagination dots */}
+                        <div 
+                            ref={paginationRef}
                             type="button"
-                            aria-label="Previous testimonials"
-                            className="review-control-button"
-                        >
-                            <RxChevronLeft className="size-6" />
-                        </button>
+                            className="flex items-center gap-2" 
+                            aria-label="Testimonial pages"
+                        />
+                        {/* Custom navigation buttons */}
+                        <div className="flex gap-4 justify-center">
+                            <button
+                                ref={previousButtonRef}
+                                type="button"
+                                aria-label="Previous testimonials"
+                                className="review-control-button"
+                            >
+                                <RxChevronLeft className="size-6" />
+                            </button>
 
-                        <button
-                            ref={nextButtonRef}
-                            type="button"
-                            aria-label="Next testimonials"
-                            className="review-control-button"
-                        >
-                            <RxChevronRight className="size-6" />
-                        </button>
+                            <button
+                                ref={nextButtonRef}
+                                type="button"
+                                aria-label="Next testimonials"
+                                className="review-control-button"
+                            >
+                                <RxChevronRight className="size-6" />
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </TextFade>
             </div>
         </section>
     )

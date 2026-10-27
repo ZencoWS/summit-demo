@@ -129,3 +129,16 @@
   }
 
 }
+
+.review-slide-content {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+}
+
+.swiper-slide-visible .review-slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -17,7 +17,7 @@ export default function Testimonial(info) {
 
     return (
         // TestimonialCard.jsx
-        <article className="flex min-h-[288px] w-full flex-col gap-4 rounded-md bg-summit-green-lightest px-8 py-8 text-summit-white md:min-h-[250px] md:gap-2 md:px-6 md:py-6">
+        <article className="flex min-h-[288px] justify-between w-full flex-col gap-4 rounded-md bg-summit-green-lightest px-8 py-8 text-summit-white md:min-h-[250px] md:gap-2 md:px-6 md:py-6">
             {/* Stars */}
             <div>
                 <ul className="flex flex-row gap-1 justify-start items-start">
