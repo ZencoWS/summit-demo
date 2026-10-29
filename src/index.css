@@ -71,6 +71,10 @@
     @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-8 hover:duration-300 hover:ease-in-out;
   }
 
+  .footer-h-links {
+    @apply hover:text-summit-green-lightest hover:underline hover:underline-offset-4 hover:duration-300 hover:ease-in-out;
+  }
+
   .nav-h-effect-active {
     @apply text-summit-green-lightest underline underline-offset-8;
   }

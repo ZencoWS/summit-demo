@@ -3,6 +3,10 @@
 import { useRef, useState } from "react";
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
+import {
+  AnimatedCard,
+  AnimatedCardSection,
+} from "../animations/AnimatedCardSection";
 import { TextFade } from "../animations/TextFade";
 import { optimize } from "../utils/cloudinary";
 
@@ -137,90 +141,94 @@ export default function ServiceAreasSection({
                 />
             </div>
 
-            <div className="grid gap-4 lg:grid-cols-[360px_1fr] lg:gap-10">
-            {/* Tab list */}
-            <div
-                role="tablist"
-                aria-orientation="vertical"
-                aria-label="Service areas"
-                className="flex flex-col gap-4 lg:h-full"
-            >
-                {areas.map((area, index) => {
-                const isActive = area.id === activeId;
-                return (
-                    <button
-                        key={area.id}
-                        ref={(el) => (tabRefs.current[index] = el)}
-                        type="button"
-                        role="tab"
-                        id={`tab-${area.id}`}
-                        aria-selected={isActive}
-                        aria-controls={`panel-${activeArea.id}`}
-                        tabIndex={isActive ? 0 : -1}
-                        onClick={() => setActiveId(area.id)}
-                        onKeyDown={(event) => handleKeyDown(event, index)}
-                        className="group relative w-full overflow-hidden rounded-md py-6 pl-8 pr-6 text-left transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--sas-surface,#1c4a43)] lg:flex-1"
-                        style={{
-                            backgroundColor: isActive
-                            ? "var(--sas-accent, #7fd6c4)"
-                            : "rgba(255,255,255,0.06)",
-                            color: isActive ? "var(--sas-accent-ink, #0f3630)" : "#ffffff",
-                        }}
-                        >
-                        {/* Active-state accent rail */}
-                        <span
-                            aria-hidden="true"
-                            className="absolute left-0 top-0 h-full w-2 bg-white transition-opacity duration-300"
-                            style={{ opacity: isActive ? 1 : 0 }}
-                        />
-                        <span className="block font-heading text-xl font-bold">{area.title}</span>
-                        <span
-                            className="mt-1 block font-sans text-sm"
+            <AnimatedCardSection className="grid gap-4 lg:grid-cols-[360px_1fr] lg:gap-10">
+                {/* Tab list */}
+                <AnimatedCard
+                    direction="left"
+                    delay={0.15}
+                    role="tablist"
+                    aria-orientation="vertical"
+                    aria-label="Service areas"
+                    className="flex flex-col gap-4 lg:h-full"
+                >
+                    {areas.map((area, index) => {
+                    const isActive = area.id === activeId;
+                    return (
+                        <button
+                            key={area.id}
+                            ref={(el) => (tabRefs.current[index] = el)}
+                            type="button"
+                            role="tab"
+                            id={`tab-${area.id}`}
+                            aria-selected={isActive}
+                            aria-controls={`panel-${activeArea.id}`}
+                            tabIndex={isActive ? 0 : -1}
+                            onClick={() => setActiveId(area.id)}
+                            onKeyDown={(event) => handleKeyDown(event, index)}
+                            className="group relative w-full overflow-hidden rounded-md py-6 pl-8 pr-6 text-left transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--sas-surface,#1c4a43)] lg:flex-1"
                             style={{
-                            color: isActive
-                                ? "var(--sas-accent-ink, #0f3630)"
-                                : "rgba(255,255,255,0.7)",
-                            opacity: isActive ? 0.85 : 1,
+                                backgroundColor: isActive
+                                ? "var(--sas-accent, #7fd6c4)"
+                                : "rgba(255,255,255,0.06)",
+                                color: isActive ? "var(--sas-accent-ink, #0f3630)" : "#ffffff",
                             }}
-                        >
-                            {area.description}
-                        </span>
-                        <a
-                            href="/#quote"
-                            className="mt-3 inline-flex items-center gap-1 font-sans text-sm font-medium transition-colors"
-                            style={{
-                            color: isActive
-                                ? "var(--sas-accent-ink, #0f3630)"
-                                : "var(--sas-accent-soft, #7fd6c4)",
-                            }}
-                        >
-                            <span className="hover:underline hover:underline-offset-2">{ctaLabel}</span>
-                            <RxChevronRight aria-hidden="true" />
-                        </a>
-                    </button>
-                );
-                })}
-            </div>
+                            >
+                            {/* Active-state accent rail */}
+                            <span
+                                aria-hidden="true"
+                                className="absolute left-0 top-0 h-full w-2 bg-white transition-opacity duration-300"
+                                style={{ opacity: isActive ? 1 : 0 }}
+                            />
+                            <span className="block font-heading text-xl font-bold">{area.title}</span>
+                            <span
+                                className="mt-1 block font-sans text-sm"
+                                style={{
+                                color: isActive
+                                    ? "var(--sas-accent-ink, #0f3630)"
+                                    : "rgba(255,255,255,0.7)",
+                                opacity: isActive ? 0.85 : 1,
+                                }}
+                            >
+                                {area.description}
+                            </span>
+                            <a
+                                href="/#quote"
+                                className="mt-3 inline-flex items-center gap-1 font-sans text-sm font-medium transition-colors"
+                                style={{
+                                color: isActive
+                                    ? "var(--sas-accent-ink, #0f3630)"
+                                    : "var(--sas-accent-soft, #7fd6c4)",
+                                }}
+                            >
+                                <span className="hover:underline hover:underline-offset-2">{ctaLabel}</span>
+                                <RxChevronRight aria-hidden="true" />
+                            </a>
+                        </button>
+                    );
+                    })}
+                </AnimatedCard>
 
-            {/* Image panel — all images stay mounted and crossfade via opacity */}
-            <div
-                role="tabpanel"
-                id={`panel-${activeArea.id}`}
-                aria-labelledby={`tab-${activeArea.id}`}
-                className="relative aspect-[4/3] w-full overflow-hidden rounded-md sm:aspect-[16/10]"
-            >
-                {areas.map((area) => (
-                <img
-                    key={area.id}
-                    src={optimize(area.image)}
-                    alt={area.title}
-                    aria-hidden={area.id !== activeId}
-                    className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ease-out"
-                    style={{ opacity: area.id === activeId ? 1 : 0 }}
-                />
-                ))}
-            </div>
-            </div>
+                {/* Image panel — all images stay mounted and crossfade via opacity */}
+                <AnimatedCard direction="right" delay={0.3}>
+                    <div
+                        role="tabpanel"
+                        id={`panel-${activeArea.id}`}
+                        aria-labelledby={`tab-${activeArea.id}`}
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-md sm:aspect-[16/10]"
+                    >
+                        {areas.map((area) => (
+                        <img
+                            key={area.id}
+                            src={optimize(area.image)}
+                            alt={area.title}
+                            aria-hidden={area.id !== activeId}
+                            className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ease-out"
+                            style={{ opacity: area.id === activeId ? 1 : 0 }}
+                        />
+                        ))}
+                    </div>
+                </AnimatedCard>
+            </AnimatedCardSection>
         </div>
     </section>
   );

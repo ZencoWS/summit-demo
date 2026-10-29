@@ -122,7 +122,7 @@ export function Footer6() {
               </Button>
             </form>
             <p className="text-xs">
-              By subscribing you agree to our <a href="/legal/privacy-policy" className="underline">Privacy Policy</a>
+              By subscribing you agree to our <a href="/legal/privacy-policy" className="underline footer-h-links">Privacy Policy</a>
             </p>
           </div>
         </div>
@@ -134,27 +134,27 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold text-summit-green-lightest footer-heading uppercase tracking-[0.2em]">Services</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/services/roof-inspection" className="flex items-center gap-3">
+                <a href="/services/roof-inspection" className="flex items-center gap-3 footer-h-links">
                   Roof inspection
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/services/roof-installation" className="flex items-center gap-3">
+                <a href="/services/roof-installation" className="flex items-center gap-3 footer-h-links">
                   Roof installation
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/services/roof-repair" className="flex items-center gap-3">
+                <a href="/services/roof-repair" className="flex items-center gap-3 footer-h-links">
                   Roof repair
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/services/roof-damage-repair" className="flex items-center gap-3">
+                <a href="/services/roof-damage-repair" className="flex items-center gap-3 footer-h-links">
                   Roof damage
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/services/ceilings" className="flex items-center gap-3">
+                <a href="/services/ceilings" className="flex items-center gap-3 footer-h-links">
                   Ceilings
                 </a>
               </li>
@@ -164,22 +164,22 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold text-summit-green-lightest footer-heading uppercase tracking-[0.2em]">Summit</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/" className="flex items-center gap-3">
+                <a href="/" className="flex items-center gap-3 footer-h-links">
                   Home
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/projects" className="flex items-center gap-3">
+                <a href="/projects" className="flex items-center gap-3 footer-h-links">
                   Projects
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/how-it-works" className="flex items-center gap-3">
+                <a href="/how-it-works" className="flex items-center gap-3 footer-h-links">
                   How it works
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/why-falcon" className="flex items-center gap-3">
+                <a href="/why-falcon" className="flex items-center gap-3 footer-h-links">
                   Why Summit
                 </a>
               </li>
@@ -189,17 +189,17 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold text-summit-green-lightest footer-heading uppercase tracking-[0.2em]">Areas</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/service-areas/centurion" className="flex items-center gap-3">
+                <a href="/service-areas/centurion" className="flex items-center gap-3 footer-h-links">
                   Centurion
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/service-areas/midrand" className="flex items-center gap-3">
+                <a href="/service-areas/midrand" className="flex items-center gap-3 footer-h-links">
                   Midrand
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/service-areas" className="flex items-center gap-3">
+                <a href="/service-areas" className="flex items-center gap-3 footer-h-links">
                   Other
                 </a>
               </li>
@@ -209,22 +209,22 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold text-summit-green-lightest footer-heading uppercase tracking-[0.2em]">Legal</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/legal/privacy-policy" className="flex items-center gap-3">
+                <a href="/legal/privacy-policy" className="flex items-center gap-3 footer-h-links">
                   Privacy policy
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/legal/terms-of-service" className="flex items-center gap-3">
+                <a href="/legal/terms-of-service" className="flex items-center gap-3 footer-h-links">
                   Terms of service
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/legal/cookie-policy" className="flex items-center gap-3">
+                <a href="/legal/cookie-policy" className="flex items-center gap-3 footer-h-links">
                   Cookie policy
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/legal/accessibility" className="flex items-center gap-3">
+                <a href="/legal/accessibility" className="flex items-center gap-3 footer-h-links">
                   Accessibility
                 </a>
               </li>
@@ -234,17 +234,17 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold text-summit-green-lightest footer-heading uppercase tracking-[0.2em]">Contact</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/#quote" className="flex items-center gap-3">
+                <a href="/#quote" className="flex items-center gap-3 footer-h-links">
                   Get a quote
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="tel:+27731244478" className="flex items-center gap-3">
+                <a href="tel:+27731244478" className="flex items-center gap-3 footer-h-links">
                   Talk to Our Team
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="https://maps.app.goo.gl/YnFLbqtePbjHS15B6" className="flex items-center gap-3">
+                <a href="https://maps.app.goo.gl/YnFLbqtePbjHS15B6" className="flex items-center gap-3 footer-h-links">
                   Visit Us
                 </a>
               </li>
